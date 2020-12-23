@@ -1,4 +1,4 @@
-const ongoose = require('mongoose');
+const mongoose = require('mongoose');
 const DB = async ()=>{
     try {
         await mongoose.connect(process.env.DB_URI, {useNewUrlParser: true, useUnifiedTopology: true, useCraeteIndexx:true, useFindAndModify:false})
